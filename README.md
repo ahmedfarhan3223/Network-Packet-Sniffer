@@ -14,25 +14,32 @@ sudo ./packet_sniffer.py
 
 **Command Line Options:**
 
-Basic usage (will show interface selection)
+**Basic usage (will show interface selection)**
+
 sudo ./packet_sniffer.py
 
-Sniff on specific interface
+**Sniff on specific interface**
+
 sudo ./packet_sniffer.py -i eth0
 
-Capture only HTTP traffic
+**Capture only HTTP traffic**
+
 sudo ./packet_sniffer.py -f "tcp port 80"
 
-Capture traffic from specific host
+**Capture traffic from specific host**
+
 sudo ./packet_sniffer.py -f "host 192.168.1.100"
 
-Capture limited number of packets
+**Capture limited number of packets**
+
 sudo ./packet_sniffer.py -c 100
 
-Verbose mode (show each packet)
+**Verbose mode (show each packet)**
+
 sudo ./packet_sniffer.py -v
 
-Complex filter
+**Complex filter**
+
 sudo ./packet_sniffer.py -f "tcp and not port 22"
 
 # Features
